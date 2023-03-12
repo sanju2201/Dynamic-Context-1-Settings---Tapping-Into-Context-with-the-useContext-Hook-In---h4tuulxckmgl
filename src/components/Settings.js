@@ -10,7 +10,7 @@ export const Settings = () => {
     return (
         <div style={{ border: '5px solid red', padding: '8px' }} id="settings">
             <h4>Settings</h4>
-            <input type={'text'} />
+            <input type={'text'} onChange={e => e.target.value ? changeGreeting(e.target.value) : changeGreeting('Hello')} />
         </div>
     )
 }
